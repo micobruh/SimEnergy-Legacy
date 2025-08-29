@@ -168,24 +168,6 @@ for channel_nr in tqdm(range(2, len(appl_lst) + 1)):
     df_appliance_processed.to_pickle(f"ukdale_new/house_{house_nr}/{appl_lst[channel_nr - 1]}.pkl")
     print("Done")
 
-house_nr = 3
-appl_lst = determine_appl_lst(house_nr)
-df_mains = read_dataframe(house_nr, "channel", 1)
-print("Success")
-for channel_nr in tqdm(range(2, len(appl_lst) + 1)):
-    df_appliance_processed = preprocess_house(house_nr, channel_nr, appl_lst, df_mains)
-    df_appliance_processed.to_pickle(f"ukdale_new/house_{house_nr}/{appl_lst[channel_nr - 1]}.pkl")
-    print("Done")
-
-house_nr = 4
-appl_lst = determine_appl_lst(house_nr)
-df_mains = read_dataframe(house_nr, "channel", 1)
-print("Success")
-for channel_nr in tqdm(range(2, len(appl_lst) + 1)):
-    df_appliance_processed = preprocess_house(house_nr, channel_nr, appl_lst, df_mains)
-    df_appliance_processed.to_pickle(f"ukdale_new/house_{house_nr}/{appl_lst[channel_nr - 1]}.pkl")
-    print("Done")
-
 house_nr = 5
 appl_lst = determine_appl_lst(house_nr)
 df_mains = read_dataframe(house_nr, "mains")
