@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Change this directory when running on your computer!
-directory = "C:\\Users\\20201242\\Documents\\Honors\\SimEnergy\\Vis-App-2\\device_app\\datasets\\"
+directory = "C:\\Users\\20201242\\Documents\\Honors\\SimEnergy\\Vis-App\\device_app\\datasets\\"
 
 # Don't change anything below!
 past_lst = ["Past Hour", "Past Day", "Past Week", "Past Month", "Past Year"]
